@@ -13,6 +13,7 @@ footer {
   display: flex;
   justify-content: center;
   text-align: center;
-
+  text-align: bottom;
   bottom: 0;
+  margin-top: 5rem;
 }

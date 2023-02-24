@@ -36,8 +36,7 @@ function App() {
       </div>
       <div className="right">
         <h1>FAQ</h1>
-
-        <FaqSection question="How many team members can I invite?" answer="You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan."></FaqSection>
+        <div className="faq-section">        <FaqSection question="How many team members can I invite?" answer="You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan."></FaqSection>
 
         <FaqSection question="What is the maximum file upload size?" answer="No more than 2GB. All files in your account must fit your allotted storage space."></FaqSection>
 
@@ -48,15 +47,13 @@ function App() {
         <FaqSection question="Can I cancel my subscription?" answer="      Yes! Send us a message and we’ll process your request no questions asked."></FaqSection>
 
         <FaqSection question="Do you provide additional support?" answer=" Chat and email support is available 24/7. Phone lines are open during normal business hours."></FaqSection>
+        </div>
       </div>
 
 
     </div>
 
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Salman Hossain</a>.
-  </footer></>
+</>
   );
 }
 

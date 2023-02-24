@@ -1,23 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Overpass&display=swap');
 
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: white; margin-left: 0.5rem; }
 
 h1 {
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: bold;
 }
 
+footer {
+  display: absolute;
+  bottom: 0;
+  color: white;
+}
+
+
 .right {
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 1.2rem;
+  overflow: scroll;
 }
 
 .question {
   font-family: 'Kumbh Sans', sans-serif;
   margin-bottom: 2rem;
+}
+
+.question:hover {
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
 }
 
 .question-active {
@@ -29,6 +42,10 @@ h1 {
 .answer-not-visible {
   display: none;
 
+}
+
+.faq-section {
+  overflow: scroll;
 }
 
 .answer-visible {
@@ -55,9 +72,10 @@ h1 {
   display: flex;
   flex-direction: row;
 
-  width: 80rem;
-  height: 40rem;
+  height: 35rem;
   overflow: hidden;
+  box-shadow: -1px 11px 28px -1px rgba(0,0,0,0.54);
+  max-width: 1000px;
 }
 
 .pseudo-box {
@@ -82,5 +100,56 @@ h1 {
   top: 5rem;
   width: 35rem;
   height: 25rem;
+
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 320px;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    box-shadow: -1px 11px 28px -1px rgba(0,0,0,0.54);
+  }
+
+  .box {
+    width: 7rem;
+    height: 7rem;
+    margin-top: -7rem;
+    margin-right: -1rem;
+  }
+
+  .woman {
+    position: relative;
+    margin-top: -16rem;
+    margin-left: 8rem;
+    width: 15rem;
+    height: 15rem;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 7rem;
+  }
+
+  .answer {
+    font-size: 0.6rem;
+  }
+
+  .faqsection {
+    font-size: 0.9rem;
+    margin-left: 1rem;
+  }
+
+  .upArrow {
+    margin-left: 1rem;
+  }
+
+  .downArrow {
+    margin-left: 1rem;
+  }
 
 }
